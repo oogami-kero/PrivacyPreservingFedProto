@@ -1,0 +1,29 @@
+      
+# --- Datasets ---
+/data/mnist/
+/data/cifar10/
+/data/cifar100/
+/data/femnist/
+
+# --- Python ---
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.env
+venv/
+env/
+*.egg-info/
+dist/
+build/
+
+# --- Attack Artifacts (Optional but recommended) ---
+# If you don't want generated images/models in the repo
+/attack_artifacts*/
+/attack_artifacts*/**/*.png
+/attack_artifacts*/**/*.pth
+/attack_artifacts*/**/*.npy # Keep if small & useful, ignore if large
+
+# --- Other ---
+.DS_Store
+*.log
