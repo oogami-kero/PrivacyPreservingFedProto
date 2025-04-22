@@ -1,8 +1,25 @@
-# FedProto: Federated Prototype Learning across Heterogeneous Clients
+# FedProto: Federated Prototype Learning across Heterogeneous Clients (Research Fork)
 
-Implementation of the paper accepted by AAAI 2022 : [FedProto: Federated Prototype Learning across Heterogeneous Clients](https://arxiv.org/abs/2105.00243).
+**Note:** This repository is a fork of the original FedProto implementation ([link to the original GitHub repository, e.g., https://github.com/username/FedProto]) created for research purposes. The original paper can be found here: [FedProto: Federated Prototype Learning across Heterogeneous Clients](https://arxiv.org/abs/2105.00243).
 
-## Requirments
+---
+
+## Purpose of this Fork
+
+This fork is being developed as part of **Seunghoo Lee's Master's thesis research at National Taiwan University of Science and Technnology**.
+
+The primary focus of this research is to:
+1.  Investigate the privacy and security aspects of the FedProto federated learning algorithm.
+2.  Analyze potential vulnerabilities associated with exchanging prototypes.
+3.  Explore and potentially implement privacy-preserving techniques applicable to prototype-based federated learning.
+
+Modifications and additions within this repository are made in service of these research goals.
+
+---
+
+*(The following sections are based on the original README and describe the base functionality)*
+
+## Requirements
 This code requires the following:
 * Python 3.6 or greater
 * PyTorch 1.6 or greater
@@ -10,14 +27,14 @@ This code requires the following:
 * Numpy 1.18.5
 
 ## Data Preparation
-* Download train and test datasets manually from the given links, or they will use the defalt links in torchvision.
-* Experiments are run on MNIST, FEMNIST and CIFAR10.
-http://yann.lecun.com/exdb/mnist/
-https://s3.amazonaws.com/nist-srd/SD19/by_class.zip
-http://www.cs.toronto.edu/∼kriz/cifar.html
+* **Important:** Datasets are NOT included in this repository and should be excluded via `.gitignore`.
+* Download train and test datasets manually from the official sources (links below), or allow `torchvision` to download them automatically where applicable (e.g., using `download=True` in dataset constructors within the code).
+* Original experiments were run on MNIST, FEMNIST, and CIFAR10.
+    * MNIST: http://yann.lecun.com/exdb/mnist/
+    * FEMNIST Data (derived from NIST SD19): https://s3.amazonaws.com/nist-srd/SD19/by_class.zip (Note: FEMNIST often requires specific preprocessing, refer to LEAF benchmark or original paper's methods if necessary)
+    * CIFAR-10: http://www.cs.toronto.edu/~kriz/cifar.html
 
-## Running the experiments
-The baseline experiment trains the model in the conventional way.
+## Running the Base FedProto Experiments
 
 * To train the FedProto on MNIST with n=3, k=100 under statistical heterogeneous setting:
 ```
@@ -61,7 +78,7 @@ The default values for various paramters parsed to the experiment are given in `
 
 
 ## Citation
-If you find this project helpful, please consider to cite the following paper:
+If you use the FedProto algorithm or base code from this repository (including this fork), please cite the original paper::
 ```
 @inproceedings{tan2021fedproto,
   title={FedProto: Federated Prototype Learning across Heterogeneous Clients},
