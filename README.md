@@ -1,6 +1,6 @@
 # FedProto: Federated Prototype Learning across Heterogeneous Clients (Research Fork)
 
-**Note:** This repository is a fork of the original FedProto implementation ([link to the original GitHub repository, e.g., https://github.com/username/FedProto]) created for research purposes. The original paper can be found here: [FedProto: Federated Prototype Learning across Heterogeneous Clients](https://arxiv.org/abs/2105.00243).
+**Note:** This repository is a fork of the original FedProto implementation ([link to the original GitHub repository, https://github.com/yuetan031/FedProto]) created for research purposes. The original paper can be found here: [FedProto: Federated Prototype Learning across Heterogeneous Clients](https://arxiv.org/abs/2105.00243).
 
 ---
 
